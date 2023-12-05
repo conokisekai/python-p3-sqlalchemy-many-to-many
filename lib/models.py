@@ -8,7 +8,7 @@ convention = {
 }
 metadata = MetaData(naming_convention=convention)
 
-Base = declarative_base(metadata=metadata)
+Base = declarative_base.orm(metadata=metadata)
 
 class Game(Base):
     __tablename__ = 'games'
